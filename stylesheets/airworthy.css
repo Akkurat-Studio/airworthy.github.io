@@ -1422,7 +1422,7 @@ input::-webkit-input-placeholder {
   color: #e5e2df;
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email] {
   width: 100%;
   box-sizing: border-box;
 }
@@ -1566,7 +1566,7 @@ a.button.search div, button.search div, input[type=submit].search div {
   -ms-flex-direction: row;
 }
 
-.pocky-input input[type=text] {
+.pocky-input input[type=text], .pocky-input input[type=email] {
   border-bottom-right-radius: 0;
   -ms-flex: 1;
   -webkit-box-flex: 1;
@@ -1577,7 +1577,7 @@ a.button.search div, button.search div, input[type=submit].search div {
   vertical-align: top;
 }
 
-.pocky-input button {
+.pocky-input button, .pocky-input a.button, .pocky-input input[type=submit] {
   margin: 0;
   display: inline-block;
   border-top-left-radius: 0;
@@ -1605,11 +1605,11 @@ a.button.search div, button.search div, input[type=submit].search div {
                display: flex;;
 }
 
-.pocky-input.large input[type=text] {
+.pocky-input.large input[type=text], .pocky-input.large input[type=email] {
   font-size: 1.8125rem;
 }
 
-.pocky-input.large button {
+.pocky-input.large button, .pocky-input.large a.button, .pocky-input.large input[type=submit] {
   font-size: 1.8125rem;
 }
 
@@ -1771,6 +1771,11 @@ a.button.search div, button.search div, input[type=submit].search div {
   height: 125px;
 }
 
+.landing-form h2 {
+  text-align: center;
+  margin-bottom: 1.8125rem;
+}
+
 .landing-form h4 {
   text-align: center;
   margin-bottom: 1.3125rem;
@@ -1778,10 +1783,6 @@ a.button.search div, button.search div, input[type=submit].search div {
 
 .landing-form p {
   margin-bottom: 0.3125rem;
-}
-
-.landing-form input[type=text] {
-  background-color: white;
 }
 
 .landing-form .success h3 {
@@ -2178,3 +2179,22 @@ a.button.search div, button.search div, input[type=submit].search div {
                          url('/fonts/MoskauGrotesk-ThinItalic.woff') format('woff'),
                          url('/fonts/MoskauGrotesk-ThinItalic.ttf') format('ttf');
 }
+
+
+section.home {
+  background:
+   linear-gradient(
+      rgba(255, 255, 255, 0.2), 
+      rgba(255, 255, 255, 0.2)
+      ),
+  url('/images/backgrounds/home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+
+
+
+
