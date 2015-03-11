@@ -1887,6 +1887,23 @@ a.button.search div, button.search div, input[type=submit].search div {
   .edit-header a.button, .edit-header button, .edit-header input[type=submit], .edit-header input {
     width: auto;
   }
+  
+  
+  
+  .landing-form div.logo {
+    width: 90%;
+  }
+  
+  .landing-form h4, .landing-form .success, .landing-form p {
+    display: block;
+    padding: 0 5%;
+  }
+  
+  
+  
+  .landing-form .success p {
+    padding: 0;
+  }
 
 }
 
