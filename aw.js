@@ -39,8 +39,7 @@ function showInvalidForm() {
   $("#email-pocky").append("<div class=\"error\" id=\"email-error\">We need a valid email</div>");
 }
 
-function install() {
-
+$(document).ready(function () {
   $("form#subscribe-form").submit(function (event) {
     event.preventDefault();
     $("#email-error").detach();
@@ -51,10 +50,4 @@ function install() {
     else
       showInvalidForm();
   });
-
-}
-
-
-$(document).ready(function () {
-  install();
 });
