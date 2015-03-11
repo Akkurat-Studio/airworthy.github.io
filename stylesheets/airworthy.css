@@ -1765,9 +1765,16 @@ a.button.search div, button.search div, input[type=submit].search div {
 }
 
 .landing-form {
-  padding: 0;
-  margin: 17rem auto 10rem;
+  right: 0;
   max-width: 550px;
+  top: 0;
+  margin: auto;
+  padding: 0;
+  position: absolute;
+  min-height: 17.85rem;
+  bottom: 0;
+  max-height: 20rem;
+  left: 0;
 }
 
 .landing-form div.logo {
@@ -1805,28 +1812,12 @@ a.button.search div, button.search div, input[type=submit].search div {
   background-image: url('/images/elements/penguin-flying-small.png');
 }
 
-@media screen and (min-width: 1500px) {
-
-  .asdf {
-    margin-top: 20rem;
-  }
-
-}
-
-@media screen and (min-width: 1750px) {
-
-  .asdf {
-    margin-top: 25rem;
-  }
-
-}
-
-@media screen and (min-width: 2000px) {
-
-  .asdf {
-    margin-top: 30rem;
-  }
-
+.landing-form div.spinner {
+  background-size: 70px 70px;
+  height: 70px;
+  width: 70px;
+  position: static;
+  margin-top: 1.3125rem;
 }
 
 @media screen and (max-width: 770px) {
@@ -1886,10 +1877,6 @@ a.button.search div, button.search div, input[type=submit].search div {
 
 @media screen and (max-width: 600px) {
 
-  .asdf {
-    padding: 0 5%;
-  }
-  
   a.button, button, input[type=submit], input[type=text] {
   
   }
@@ -1904,20 +1891,6 @@ a.button.search div, button.search div, input[type=submit].search div {
 
 @media screen and (max-width: 500px) {
 
-  .asdf {
-    margin-top: 15rem;
-  }
-  
-  .asdf .div.logo {
-    height: 100px;
-  }
-  
-  
-  
-  section.hero .logo {
-    width: 90%;
-  }
-  
   
   
   div.unauthenticated .mobile-menu {
@@ -1968,13 +1941,13 @@ a.button.search div, button.search div, input[type=submit].search div {
     -ms-flex-direction: column;
   }
   
-  .pocky-input.large input[type=text] {
+  .pocky-input.large input[type=text], .pocky-input.large input[type=email] {
     width: 100%;
     border-top-right-radius: 3px;
     border-bottom-left-radius: 0;
   }
   
-  .pocky-input.large button {
+  .pocky-input.large button, .pocky-input.large a.button, .pocky-input.large input[type=submit] {
     width: 100%;
     border-top-right-radius: 0;
     border-bottom-left-radius: 3px;
@@ -2001,18 +1974,6 @@ a.button.search div, button.search div, input[type=submit].search div {
   
   .button-group .pocky-input button {
     width: auto;
-  }
-
-}
-
-@media screen and (max-width: 400px) {
-
-  .asdf {
-    margin-top: 15rem;
-  }
-  
-  .asdf .div.logo {
-    height: 80px;
   }
 
 }

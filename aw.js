@@ -15,12 +15,12 @@ function isEmail(email) {
 function formSubmitted(resp) {
   console.log(resp);
   if("error" == resp.result) {
-    $("form#subscribe-form").append("<p id=\"form-error\" class=\"error\">" + resp.msg + "</p>");
+    $("#email-pocky").append("<div id=\"form-error\" class=\"error\">" + resp.msg + "</div>");
   }
   else {
     // On Successful Subscription
     $("form#subscribe-form").detach();
-    $("#landing-container").append("<p>" + resp.msg + "</p>");
+    $("#landing-container").append("<div>" + resp.msg + "</div>");
   }
 }
 
@@ -36,7 +36,7 @@ function submitForm() {
 }
 
 function showInvalidForm() {
-  $("#email-pocky").append("<div class=\"error\" id=\"email-error\">We need a valid email</div>");
+  $("#email-pocky").append("<div class=\"error\" id=\"email-error\">Write your email address here.</div>");
 }
 
 $(document).ready(function () {
