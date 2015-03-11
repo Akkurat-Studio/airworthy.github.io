@@ -336,7 +336,12 @@ section {
 }
 
 section.home {
-  background: url('/images/backgrounds/home.jpg') no-repeat center center;
+  background-repeat: no-repeat;
+  background: linear-gradient(
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
+        ),
+    url('/images/backgrounds/home.jpg');
 }
 
 section.login {
@@ -2179,22 +2184,3 @@ a.button.search div, button.search div, input[type=submit].search div {
                          url('/fonts/MoskauGrotesk-ThinItalic.woff') format('woff'),
                          url('/fonts/MoskauGrotesk-ThinItalic.ttf') format('ttf');
 }
-
-
-section.home {
-  background:
-   linear-gradient(
-      rgba(255, 255, 255, 0.2), 
-      rgba(255, 255, 255, 0.2)
-      ),
-  url('/images/backgrounds/home.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-
-
-
-
-
