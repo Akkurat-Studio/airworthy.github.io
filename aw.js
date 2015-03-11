@@ -20,7 +20,7 @@ function formSubmitted(resp) {
   else {
     // On Successful Subscription
     $("form#subscribe-form").detach();
-    $("#landing-container").append("<div>" + resp.msg + "</div>");
+    $("#landing-container").append("<div class=\"success\"><h3>Thanks!</h3><div/><p>" + resp.msg + "</p></div>");
   }
 }
 
