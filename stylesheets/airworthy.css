@@ -1823,10 +1823,6 @@ a.button.search div, button.search div, input[type=submit].search div {
   box-shadow: none;
 }
 
-.landing-form .logo, .landing-form h4, .landing-form .success, .landing-form p {
-  margin: 0 5%;
-}
-
 @media screen and (max-width: 770px) {
 
   
