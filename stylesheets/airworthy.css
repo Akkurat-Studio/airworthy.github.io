@@ -332,6 +332,7 @@ section {
   width: 100%;
   -webkit-flex: 1;
   -ms-flex-item-align: stretch;
+  min-height: 550px;
   -webkit-align-self: stretch;
 }
 
