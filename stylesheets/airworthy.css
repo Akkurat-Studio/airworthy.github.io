@@ -339,7 +339,7 @@ section {
 section.home {
   background-repeat: no-repeat;
   background: linear-gradient(
-        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2),
         rgba(255, 255, 255, 0.2)
         ),
     url('/images/backgrounds/home.jpg');
@@ -919,9 +919,14 @@ tr.focus .checkbox {
   padding-left: 0.2rem;
 }
 
-tr.categories th.sort:after {
+tr.categories th.sort-desc:after {
   visibility: visible;
   content: ' ▾';
+}
+
+tr.categories th.sort-asc:after {
+  visibility: visible;
+  content: ' ▴';
 }
 
 tr.categories th:after {
@@ -1785,7 +1790,7 @@ a.button.search div, button.search div, input[type=submit].search div {
   height: 125px;
 }
 
-.landing-form h2 {
+.landing-form h2, .landing-form h1 {
   text-align: center;
   margin-bottom: 1.8125rem;
 }
@@ -1796,7 +1801,7 @@ a.button.search div, button.search div, input[type=submit].search div {
 }
 
 .landing-form p {
-  margin-bottom: 0.3125rem;
+  margin-top: 0.3125rem;
 }
 
 .landing-form .success h3 {
@@ -1951,6 +1956,10 @@ a.button.search div, button.search div, input[type=submit].search div {
   
   .landing-form {
     padding-top: 2rem;
+  }
+  
+  .landing-form h1 {
+    font-size: 1.8125rem;
   }
   
   .edit-header {
