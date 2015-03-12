@@ -1507,6 +1507,7 @@ input[type=checkbox] {
 a.button, button, input[type=submit] {
   font-family: 'MoskauGrotesk-Light', Helvetica, sans-serif;
   margin-right: 0.625rem;
+  -webkit-appearance: none;
   border: none;
   padding: 0.4rem 1.3125rem 0.2rem;
   cursor: pointer;
@@ -1822,6 +1823,10 @@ a.button.search div, button.search div, input[type=submit].search div {
   box-shadow: none;
 }
 
+.landing-form .logo, .landing-form h4, .landing-form .success, .landing-form p {
+  margin: 0 5%;
+}
+
 @media screen and (max-width: 770px) {
 
   
@@ -1946,6 +1951,10 @@ a.button.search div, button.search div, input[type=submit].search div {
   
   div.unauthenticated li span {
     display: none;
+  }
+  
+  .landing-form {
+    padding-top: 2rem;
   }
   
   .edit-header {
