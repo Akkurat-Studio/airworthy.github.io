@@ -1776,28 +1776,36 @@ a.button.search div, button.search div, input[type=submit].search div {
   max-width: 550px;
   top: 0;
   margin: auto;
-  padding: 0;
   position: absolute;
   min-height: 17.85rem;
   bottom: 0;
-  max-height: 20rem;
+  max-height: 21.5rem;
   left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1.8125rem;
+  border-radius: 3px;
 }
 
 .landing-form div.logo {
   width: 100%;
   position: static;
-  height: 125px;
+  height: 126px;
 }
 
-.landing-form h2, .landing-form h1 {
+.landing-form h1 {
   text-align: center;
+  line-height: 1.8125rem;
   margin-bottom: 1.8125rem;
 }
 
 .landing-form h4 {
+  margin-top: -1rem;
   text-align: center;
   margin-bottom: 1.3125rem;
+}
+
+.landing-form input[type=email] {
+  max-width: 20rem;
 }
 
 .landing-form p {
@@ -1895,15 +1903,8 @@ a.button.search div, button.search div, input[type=submit].search div {
     width: auto;
   }
   
-  
-  
-  .landing-form div.logo {
-    width: 90%;
-  }
-  
   .landing-form h4, .landing-form .success, .landing-form p {
     display: block;
-    padding: 0 5%;
   }
   
   
@@ -1955,11 +1956,21 @@ a.button.search div, button.search div, input[type=submit].search div {
   }
   
   .landing-form {
-    padding-top: 2rem;
+    max-height: 25rem;
+    padding: 1.3125rem 5%;
   }
   
   .landing-form h1 {
     font-size: 1.8125rem;
+  }
+
+  .landing-form h4 {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .landing-form input[type=email] {
+    max-width: 100%;
   }
   
   .edit-header {
@@ -1984,6 +1995,7 @@ a.button.search div, button.search div, input[type=submit].search div {
     width: 100%;
     border-top-right-radius: 0;
     border-bottom-left-radius: 3px;
+    flex: 0 1 0%;
   }
   
   .pocky-input .error {
@@ -2012,6 +2024,10 @@ a.button.search div, button.search div, input[type=submit].search div {
 }
 
 @media screen and (max-width: 300px) {
+
+  .landing-form {
+    max-height: 28rem;
+  }
 
   .mini-form {
     width: 100%;
