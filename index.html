@@ -22,6 +22,9 @@
     <meta content="#3ec2cf" name="theme-color">
     <title>Airworthy</title>
     <link href="/stylesheets/index.css" rel="stylesheet" type="text/css">
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://malsup.github.com/min/jquery.form.min.js"></script>
+    <script src="/aw.js" type="text/javascript"></script>
 </head>
 <body>
 <div tabindex="0" class="content marketing">
@@ -90,15 +93,17 @@
         <section class="mailing-list">
             <div class="container">
                 <div class="badge"></div>
-                <h4>Stay current and sign up for the mailing list!</h4>
-
-                <form>
-                    <div class="pocky-input large invalid"><input type="text"
-                                                                  placeholder="email@example.com"
-                                                                  name="email" value="">
-
-                        <div class="error">must be an email address</div>
-                        <input type="submit" value="Subscribe" class="button primary" disabled="true"></div>
+                <h4>Stay current and sign up for the Airworthy mailing list!</h4>
+                <form action="//airworthy.us10.list-manage.com/subscribe/post?u=4cc3eaaba999c1ae3aff5aa1e&amp;id=3bf0070305"
+                      method="post" id="subscribe-form" name="subscribe-form" class="validate"
+                      target="_blank" novalidate>
+                    <div class="pocky-input large" id="email-pocky">
+                        <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="email@example.com">
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                               class="button primary">
+                    </div>
+                    <input type="text" name="b_4cc3eaaba999c1ae3aff5aa1e_3bf0070305" tabindex="-1" value=""
+                           style="position: absolute; left: -5000px;">
                 </form>
             </div>
         </section>
@@ -118,7 +123,21 @@
             </div>
         </div>
     </footer>
-    <noscript></noscript>
+    <!--<script>-->
+    <!--(function (i, s, o, g, r, a, m) {-->
+    <!--i['GoogleAnalyticsObject'] = r;-->
+    <!--i[r] = i[r] || function () {-->
+    <!--(i[r].q = i[r].q || []).push(arguments)-->
+    <!--}, i[r].l = 1 * new Date();-->
+    <!--a = s.createElement(o),-->
+    <!--m = s.getElementsByTagName(o)[0];-->
+    <!--a.async = 1;-->
+    <!--a.src = g;-->
+    <!--m.parentNode.insertBefore(a, m)-->
+    <!--})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');-->
+    <!--ga('create', 'UA-60325305-1', 'auto');-->
+    <!--ga('send', 'pageview');-->
+    <!--</script>-->
 </div>
 </body>
 </html>
