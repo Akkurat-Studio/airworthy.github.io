@@ -55,7 +55,7 @@
                     width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
         </section>
         <section class="school">
-            <h3>Signup for Private Pilot Ground School!</h3>
+            <h3>Sign Up for Private Pilot Ground School!</h3>
 
             <div class="row">
                 <div class="column">
@@ -77,14 +77,21 @@
                         <li>This class is also attended by licensed Private Pilots who use it as part of their
                             continuing education to update and maintain their aviation knowledge.
                         </li>
-                        <li>For more information, or to reserve your seat in the class, call Campbell Airport Flight
-                            School (847) 223-2200.
+                        <li>For more information, or to reserve your seat in the class, email us at
+                            <a href="mailto:school@airworthy.co">school@airworthy.co</a> or call Campbell Airport
+                            Flight School (847) 223-2200.
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="container">
-                <a href="/signup" class="button primary">Sign Up</a>
+                <form action="mailto:school@airworthy.co?subject=Private Pilot Ground School&body=Sign Me Up."
+                      method="post" enctype="text/plain">
+                    <div class="pocky-input large" id="school-pocky">
+                        <input type="text" value="" name="full-name" placeholder="John Doe"/>
+                        <input type="submit" value="Sign Up" class="button primary"/>
+                    </div>
+                </form>
             </div>
 
         </section>
@@ -94,6 +101,7 @@
             <div class="container">
                 <div class="badge"></div>
                 <h4>Stay current and sign up for the Airworthy mailing list!</h4>
+
                 <form action="//airworthy.us10.list-manage.com/subscribe/post?u=4cc3eaaba999c1ae3aff5aa1e&amp;id=3bf0070305"
                       method="post" id="subscribe-form" name="subscribe-form" class="validate"
                       target="_blank" novalidate>
@@ -105,6 +113,24 @@
                     <input type="text" name="b_4cc3eaaba999c1ae3aff5aa1e_3bf0070305" tabindex="-1" value=""
                            style="position: absolute; left: -5000px;">
                 </form>
+            </div>
+        </section>
+
+        <section class="blog">
+            <h3>Pilot Log Book App?</h3>
+
+            <div class="row">
+                <div class="column">
+                    <img src="/images/elements/tutorial-2.jpg">
+                </div>
+                <div class="column">
+                    <p><b>Q:</b> I thought Airworthy was building an app for pilots to track their flight time and
+                        airworthiness.</p>
+
+                    <p><b>A:</b> That's true. But no more.
+                        <a href="/success/"><h4>Read All About It!</h4></a>
+                    </p>
+                </div>
             </div>
         </section>
     </div>
@@ -123,21 +149,21 @@
             </div>
         </div>
     </footer>
-    <!--<script>-->
-    <!--(function (i, s, o, g, r, a, m) {-->
-    <!--i['GoogleAnalyticsObject'] = r;-->
-    <!--i[r] = i[r] || function () {-->
-    <!--(i[r].q = i[r].q || []).push(arguments)-->
-    <!--}, i[r].l = 1 * new Date();-->
-    <!--a = s.createElement(o),-->
-    <!--m = s.getElementsByTagName(o)[0];-->
-    <!--a.async = 1;-->
-    <!--a.src = g;-->
-    <!--m.parentNode.insertBefore(a, m)-->
-    <!--})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');-->
-    <!--ga('create', 'UA-60325305-1', 'auto');-->
-    <!--ga('send', 'pageview');-->
-    <!--</script>-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-60325305-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </div>
 </body>
 </html>
