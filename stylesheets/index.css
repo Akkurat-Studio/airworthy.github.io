@@ -532,7 +532,6 @@ section.school .button {
 
 section.mailing-list {
     background-color: #fffefc;
-    background-image: url('/images/elements/pattern.jpg');
 }
 
 section.mailing-list .container {
@@ -566,7 +565,7 @@ section.blog h3 {
 }
 
 section.blog p, section.blog a {
-    font-size: 2.0em;
+    font-size: 1.5em;
     line-height: 1.0em;
     margin-bottom: 1em;
 }
